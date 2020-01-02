@@ -1,6 +1,7 @@
 package org.pk.model;
 
-import java.sql.Date;
+
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,8 +16,8 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 public class Project extends PanacheEntity {
 	public String projectName;
 	public String projectDesc;
-	public Date startDate;
-	public Date endDate;
+	public LocalDate startDate;
+	public LocalDate endDate;
 	public String projectManager;
 	public String technicalArch;
 	public String developers;
