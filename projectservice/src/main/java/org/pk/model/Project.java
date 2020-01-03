@@ -41,4 +41,68 @@ public class Project extends PanacheEntity {
 	public static List<Project> getBeforeYear(int year) {
 		return Project.<Project>streamAll().filter(p -> p.startDate.getYear() <= year).collect(Collectors.toList());
 	}
+
+	public String getProjectName() {
+		return projectName;
+	}
+
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
+	}
+
+	public String getProjectDesc() {
+		return projectDesc;
+	}
+
+	public void setProjectDesc(String projectDesc) {
+		this.projectDesc = projectDesc;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(LocalDate startDate) {
+		this.startDate = startDate;
+	}
+
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(LocalDate endDate) {
+		this.endDate = endDate;
+	}
+
+	public String getProjectManager() {
+		return projectManager;
+	}
+
+	public void setProjectManager(String projectManager) {
+		this.projectManager = projectManager;
+	}
+
+	public String getTechnicalArch() {
+		return technicalArch;
+	}
+
+	public void setTechnicalArch(String technicalArch) {
+		this.technicalArch = technicalArch;
+	}
+
+	public String getDevelopers() {
+		return developers;
+	}
+
+	public void setDevelopers(String developers) {
+		this.developers = developers;
+	}
+
+	public ProjectType getProjectType() {
+		return projectType;
+	}
+
+	public void setProjectType(ProjectType projectType) {
+		this.projectType = projectType;
+	}
 }

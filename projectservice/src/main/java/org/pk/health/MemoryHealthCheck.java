@@ -19,6 +19,7 @@ public class MemoryHealthCheck implements HealthCheck {
 			int mb = 1024*1024;
 			//Getting the runtime reference from system
 			Runtime runtime = Runtime.getRuntime();
+			System.out.println("Hello world");
 			System.out.println("##### Heap utilization statistics [MB] #####");
 			//Print used memory
 			System.out.println("Used Memory:" 
